@@ -1,11 +1,41 @@
-import React from 'react';
+import React, { Component, PropTypes } from 'react';
 
-const SeriesScreen = (props) => {
-  return (
-    <div>
-      Series Screen
-    </div>
-  );
-};
+import Header from '../components/Header';
+import NavBar from '../components/NavBar';
+import Footer from '../components/Footer/index';
+import MoviesPanel from '../components/MoviesPanel';
 
-export default SeriesScreen;
+import API from '../API';
+
+
+export default class SeriesScreen extends Component {
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      movies: [],
+    };
+  }
+
+  componentDidMount() {
+    API.fetchSeries()
+    .then((data) => {
+      this.setState({
+        ...this.state,
+        movies: data,
+      });
+    });
+  }
+
+  render() {
+    return (
+      <div>
+        <Header />
+        <NavBar />
+        <MoviesPanel movies={this.state.movies} />
+        <Footer />
+      </div>
+    );
+  }
+
+}

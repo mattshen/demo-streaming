@@ -5,7 +5,6 @@ import HomeScreen from './screens/HomeScreen';
 import MoviesScreen from './screens/MoviesScreen';
 import SeriesScreen from './screens/SeriesScreen';
 
-import logo from './logo.svg';
 import './App.css';
 
 /*

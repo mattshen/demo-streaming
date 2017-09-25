@@ -4,6 +4,6 @@
     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
     "react/prefer-stateless-function": [1, { "ignorePureComponents": true }],
     "react/forbid-prop-types": [1, { "forbid": [""] }],
-    "arrow-body-style": "off"
+    "arrow-body-style": "off",
   }
 }

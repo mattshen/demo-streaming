@@ -1,11 +1,41 @@
-import React from 'react';
+import React, { Component, PropTypes } from 'react';
 
-const MoviesScreen = (props) => {
-  return (
-    <div>
-      Movies Screen
-    </div>
-  );
-};
+import Header from '../components/Header';
+import NavBar from '../components/NavBar';
+import Footer from '../components/Footer/index';
+import ItemsPanel from '../components/ItemsPanel';
 
-export default MoviesScreen;
+import API from '../API';
+
+
+export default class MoviesScreen extends Component {
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      movies: [],
+    };
+  }
+
+  componentDidMount() {
+    API.fetchMovies()
+    .then((data) => {
+      this.setState({
+        ...this.state,
+        movies: data,
+      });
+    });
+  }
+
+  render() {
+    return (
+      <div>
+        <Header />
+        <NavBar />
+        <ItemsPanel items={this.state.movies} />
+        <Footer />
+      </div>
+    );
+  }
+
+}

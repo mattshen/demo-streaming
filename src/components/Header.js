@@ -1,10 +1,8 @@
 import React from 'react';
 
-import './Header.css';
-
 const LogoPanel = () => {
   return (
-    <div>
+    <div style={{ textAlign: 'left', fontSize: '24' }}>
       DEMO Streaming
     </div>
   );
@@ -13,16 +11,37 @@ const LogoPanel = () => {
 const LoginButton = () => {
   return (
     <div>
-      Log in
+      <button style={{ color: 'white', backgroundColor: 'Transparent', border: 'none' }}> Log in </button>
     </div>
   );
 };
 
+const StartFreeTrialButton = () => {
+  return (
+    <div>
+      <button style={{ color: 'white', backgroundColor: '#313131', border: 'none', height: '20px' }}>Start your free trial</button>
+    </div>
+  );
+};
+
+const headerStyle = {
+  display: 'flex',
+  'background-color': '#0c59ff',
+  height: '30px',
+  padding: '10px',
+  color: 'white',
+};
+
 const Header = () => {
   return (
-    <div className="Header-panel">
-      <LogoPanel />
-      <LoginButton />
+    <div style={headerStyle}>
+      <div style={{ flex: 0.6 }}>
+        <LogoPanel />
+      </div>
+      <div style={{ flex: 0.4, display: 'flex' }}>
+        <LoginButton />
+        <StartFreeTrialButton />
+      </div>
     </div>
   );
 };

@@ -1,13 +1,18 @@
 import React from 'react';
 
 import Header from '../components/Header';
+import NavBar from '../components/NavBar';
+import Footer from '../components/Footer/index';
+import CategoriesPanel from '../components/CatagoryPanel';
 
-const HomeScreen = (props) => {
+const HomeScreen = () => {
   return (
     <div>
       <Header />
-      HomeScreen
-    </div>    
+      <NavBar />
+      <CategoriesPanel />
+      <Footer />
+    </div>
   );
 };
 
