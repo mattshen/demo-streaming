@@ -4,7 +4,7 @@ import PlaceHolder from '../assets/placeholder.png';
 
 const Category = (props) => {
   return (
-    <a style={{ height: '144px', width: '254px', padding: '10px' }}>
+    <a style={{ height: '160px', width: '254px', padding: '10px' }}>
       <img style={{ backgroundColor: '#171717' }} src={PlaceHolder} />
       {props.title}
     </a>
@@ -14,8 +14,9 @@ const Category = (props) => {
 const CategoriesPanel = (props) => {
   return (
     <div style={{ display: 'flex', padding: '20px', alignItems: 'flex-start', alignContent: 'flex-start' }}>
-      <Category title="Popular Series" />
-      <Category title="Popular Movies" />
+      {
+        props.catagories.map(catagory => <Category title={catagory.title} />)
+      }
     </div>
   );
 };

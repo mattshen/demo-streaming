@@ -1,6 +1,6 @@
 import React, { Component, PropTypes } from 'react';
 
-import Header from '../components/Header';
+import Header from '../components/Header/index';
 import NavBar from '../components/NavBar';
 import Footer from '../components/Footer/index';
 import ItemsPanel from '../components/ItemsPanel';
