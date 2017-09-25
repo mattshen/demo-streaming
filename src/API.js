@@ -2,9 +2,13 @@ import _ from 'lodash';
 import { PAGE_SIZE } from './Constants';
 
 function restCall(url) {
-  const p = fetch(url);
-  return p.then((response) => {
-    return response.json().catch(() => { /* do nothing */ });
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      const p = fetch(url);
+      p.then((response) => {
+        resolve(response.json().catch(() => { /* do nothing */ }));
+      });
+    }, 1500); //TODO, make delay on purpose
   });
 }
 
