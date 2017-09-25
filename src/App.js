@@ -25,8 +25,8 @@ class App extends Component {
 }
 */
 
-const RootContainer = ({ children }) => <div id="appRoot" className="App">{children}</div>;
-RootContainer.propTypes = {
+const AppRoot = ({ children }) => <div id="appRoot" className="App">{children}</div>;
+AppRoot.propTypes = {
   children: PropTypes.object.isRequired,
 };
 
@@ -34,7 +34,7 @@ class App extends Component {
   render() {
     return (
       <Router history={hashHistory}>
-        <Route path="/" component={RootContainer}>
+        <Route path="/" component={AppRoot}>
           <IndexRoute component={HomeScreen} />
           <Route path="/home" component={HomeScreen} />
           <Route path="/series" component={SeriesScreen} />

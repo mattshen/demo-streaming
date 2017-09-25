@@ -31,7 +31,7 @@ export default class SeriesScreen extends Component {
     return (
       <div>
         <Header />
-        <NavBar />
+        <NavBar navTitle="Popular Series" />
         <ItemsPanel items={this.state.series} />
         <Footer />
       </div>

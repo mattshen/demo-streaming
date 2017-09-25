@@ -9,10 +9,10 @@ const style = {
   color: '#edf0e6',
 };
 
-const NavBar = () => {
+const NavBar = (props) => {
   return (
     <div style={style}>
-      Popular Titles
+      {props.navTitle}
     </div>
   );
 };

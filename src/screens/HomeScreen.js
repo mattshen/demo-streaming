@@ -8,7 +8,6 @@ import CategoriesPanel from '../components/CategoriesPanel';
 class HomeScreen extends Component {
 
   constructor(props) {
-
     super(props);
     this.state = {
       categories: [{
@@ -25,13 +24,13 @@ class HomeScreen extends Component {
     return (
       <div>
         <Header />
-        <NavBar />
+        <NavBar navTitle="Popular Titles" />
         <CategoriesPanel categories={this.state.categories} />
         <Footer />
       </div>
     );
   }
 
-};
+}
 
 export default HomeScreen;
