@@ -8,8 +8,8 @@ import StartFreeTrialButton from './StartFreeTrialButton';
 const headerStyle = {
   display: 'flex',
   'background-color': '#0c59ff',
-  height: '48px',
   color: 'white',
+  flexWrap: 'wrap',
 };
 
 const Header = () => {
@@ -18,7 +18,7 @@ const Header = () => {
       <div style={{ flex: 0.6 }}>
         <LogoPanel />
       </div>
-      <div style={{ flex: 0.4, display: 'flex', justifyContent: 'flex-end' }}>
+      <div style={{ flex: 0.4, display: 'flex', justifyContent: 'flex-end', flexWrap: 'wrap' }}>
         <div style={{ padding: '5px' }}>
           <LoginButton />
         </div>

@@ -6,7 +6,7 @@ import instagram from '../../assets/social/instagram-white.svg';
 
 const SocialLinks = () => {
   return (
-    <div style={{ display: 'row', flex: '0.5' }}>
+    <div style={{ display: 'flex', flex: '0.5', flexWrap: 'wrap' }}>
       <img height="20px" style={{ padding: '5px' }} src={facebook} alt="Facebook" />
       <img height="20px" style={{ padding: '5px' }} src={twitter} alt="Twitter" />
       <img height="20px" style={{ padding: '5px' }} src={instagram} alt="Instagram" />

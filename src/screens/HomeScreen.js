@@ -11,10 +11,10 @@ class HomeScreen extends Component {
     super(props);
     this.state = {
       categories: [{
-        title: 'Series',
+        title: 'Popular Series',
         route: 'series',
       }, {
-        title: 'Movies',
+        title: 'Popular Movies',
         route: 'movies',
       }],
     };

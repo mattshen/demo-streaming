@@ -5,7 +5,7 @@ import PlaceHolder from '../assets/placeholder.png';
 
 const Category = (props) => {
   return (
-    <Link to={props.route} style={{ height: '160px', width: '254px', padding: '10px' }}>
+    <Link to={props.route} style={{ height: '160px', width: '254px', padding: '10px', 'text-decoration': 'none', color: 'black' }}>
       <img alt={props.title} style={{ backgroundColor: '#171717' }} src={PlaceHolder} />
       {props.title}
     </Link>

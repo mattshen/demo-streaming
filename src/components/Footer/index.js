@@ -7,13 +7,14 @@ import SocialLinks from './SocialLinks';
 import AppStoreLinks from './AppStoreLinks';
 
 const footerStyle = {
+  display: 'flex',
   'text-align': 'left',
   'background-color': '#323232',
   padding: '10px',
   color: '#edf0e6',
   fontSize: '12',
-  display: 'flex',
   flexDirection: 'column',
+  flexWrap: 'wrap',
 };
 
 const Footer = () => {

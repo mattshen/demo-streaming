@@ -6,7 +6,7 @@ import MSStore from '../../assets/store/windows-store.svg';
 
 const AppStoreLinks = () => {
   return (
-    <div style={{ display: 'row', flex: '0.5', justifyContent: 'center' }}>
+    <div style={{ display: 'flex', flex: '0.5', justifyContent: 'flex-end', alignItems: 'flex-start', flexWrap: 'wrap' }}>
       <img style={{ padding: '5px' }} src={AppStore} alt="Apple App Store" />
       <img style={{ padding: '5px' }} src={PlayStore} alt="Google PlayStore" />
       <img height={40} style={{ padding: '5px' }} src={MSStore} alt="Microsoft Store" />
