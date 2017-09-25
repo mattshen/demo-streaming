@@ -1,6 +1,7 @@
 {
   "name": "challenge001",
   "version": "0.1.0",
+  "homepage": "https://www.mattshen.com/demo-streaming",
   "private": true,
   "dependencies": {
     "react": "^15.6.1",
@@ -28,6 +29,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "./node_modules/.bin/gh-pages -d build"
   }
 }

@@ -1,4 +1,4 @@
-# Challenge 001
+# Demo Streaming
 
 ## Code Structure
 - All JS code are in `src` folder
@@ -11,6 +11,20 @@
 - **create-react-app**, easy to start a ReactJs project
 - **lodash**, very popular lib
 - **eslint**, not to make common mistake while coding
+- **gh-page**, easiest way to deploy the app to github pages
+
+
+## Build
+- run `yarn build` to build the project
+- `output` folder is `build` instead of `dist`
+
+
+## Testing Instructions
+- App accessible via https://www.mattshen.com/demo-streaming
+- Home Page, http://{host}:{port}/
+- Series Page, http://{host}:{port}/#/series
+- Movies Page, http://{host}:{port}/#/movies
+- Go back to home, click "Categories" within Nav Bar when on Page "Series" and "Movies", or click "Home" within footer (site links)
 
 
 ## Improvements
@@ -18,9 +32,3 @@
 - Use redux to manage state
 - Centralize CSS management
 - Create a `container` layer between `components` and `screens`
-
-## Testing Instructions
-- Home Page, http://{host}:{port}/
-- Series Page, http://{host}:{port}/#/series
-- Movies Page, http://{host}:{port}/#/movies
-- Go back to home, click "Categories" within Nav Bar when on Page "Series" and "Movies", or click "Home" within footer (site links)
