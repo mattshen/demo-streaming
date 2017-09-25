@@ -30,5 +30,6 @@
 ## Improvements
 - Add more test cases
 - Use redux to manage state
-- Centralize CSS management
 - Create a `container` layer between `components` and `screens`
+- Centralize CSS management
+- Optimize for responsiveness
