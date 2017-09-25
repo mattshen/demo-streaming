@@ -23,14 +23,6 @@
   to { transform: rotate(360deg); }
 }
 
-.NavBar {
-  text-align: left;
-  background-color: #323232;
-  height: 20px;
-  padding: 10px;
-  color: #edf0e6;
-}
-
 .Footer {
   text-align: left;
   background-color: #323232;

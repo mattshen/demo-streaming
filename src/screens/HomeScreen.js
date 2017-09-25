@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import Header from '../components/Header/index';
 import NavBar from '../components/NavBar';
 import Footer from '../components/Footer/index';
-import CategoriesPanel from '../components/CatagoriesPanel';
+import CategoriesPanel from '../components/CategoriesPanel';
 
 class HomeScreen extends Component {
 
@@ -11,10 +11,12 @@ class HomeScreen extends Component {
 
     super(props);
     this.state = {
-      catagories: [{
+      categories: [{
         title: 'Series',
+        route: 'series',
       }, {
         title: 'Movies',
+        route: 'movies',
       }],
     };
   }
@@ -24,7 +26,7 @@ class HomeScreen extends Component {
       <div>
         <Header />
         <NavBar />
-        <CategoriesPanel catagories={this.state.catagories} />
+        <CategoriesPanel categories={this.state.categories} />
         <Footer />
       </div>
     );
