@@ -34,3 +34,4 @@
 - Centralize CSS management
 - Optimize for responsiveness
 - Replace "px" in CSS styles
+- Add flow-types
