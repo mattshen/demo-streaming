@@ -1,4 +1,5 @@
 import _ from 'lodash';
+import { PAGE_SIZE } from './Constants';
 
 function restCall(url) {
   const p = fetch(url);
@@ -12,7 +13,7 @@ const fetchMovies = () => {
     .then((data) => {
       return _.take(
         data.entries.filter(entry => entry.programType === 'movie' && entry.releaseYear >= 2010),
-        21,
+        PAGE_SIZE,
       );
     });
 };
@@ -22,7 +23,7 @@ const fetchSeries = () => {
     .then((data) => {
       return _.take(
         data.entries.filter(entry => entry.programType === 'series' && entry.releaseYear >= 2010),
-        21,
+        PAGE_SIZE,
       );
     });
 };
