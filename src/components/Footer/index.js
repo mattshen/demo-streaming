@@ -11,6 +11,7 @@ const footerStyle = {
   'background-color': '#323232',
   padding: '10px',
   color: '#edf0e6',
+  fontSize: '12',
   display: 'flex',
   flexDirection: 'column',
 };
