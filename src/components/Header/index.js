@@ -8,7 +8,7 @@ import StartFreeTrialButton from './StartFreeTrialButton';
 const headerStyle = {
   display: 'flex',
   'background-color': '#0c59ff',
-  height: '45px',
+  height: '48px',
   color: 'white',
 };
 
@@ -19,8 +19,12 @@ const Header = () => {
         <LogoPanel />
       </div>
       <div style={{ flex: 0.4, display: 'flex', justifyContent: 'flex-end' }}>
-        <LoginButton />
-        <StartFreeTrialButton />
+        <div style={{ padding: '5px' }}>
+          <LoginButton />
+        </div>
+        <div style={{ padding: '5px' }}>
+          <StartFreeTrialButton />
+        </div>
       </div>
     </div>
   );
