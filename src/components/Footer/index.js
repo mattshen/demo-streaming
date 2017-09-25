@@ -1,6 +1,6 @@
 import React from 'react';
 
-import EmtpyBar from '../EmptyBar';
+import EmptyBar from '../EmptyBar';
 import SiteLinks from './SiteLinks';
 import Copyright from './Copyright';
 import SocialLinks from './SocialLinks';
@@ -21,7 +21,7 @@ const Footer = () => {
     <div style={footerStyle}>
       <SiteLinks />
       <Copyright />
-      <EmtpyBar height={25} />
+      <EmptyBar height={25} />
       <div style={{ display: 'flex', flexDirection: 'row' }}>
         <SocialLinks />
         <AppStoreLinks />

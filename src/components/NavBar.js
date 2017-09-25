@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { PropTypes } from 'react';
 import { Link } from 'react-router';
 
 const style = {
@@ -19,6 +19,11 @@ const NavBar = (props) => {
       {props.navTitle}
     </div>
   );
+};
+
+NavBar.propTypes = {
+  navTitle: PropTypes.string.isRequired,
+  showGoBack: PropTypes.bool,
 };
 
 export default NavBar;

@@ -5,5 +5,7 @@
     "react/prefer-stateless-function": [1, { "ignorePureComponents": true }],
     "react/forbid-prop-types": [1, { "forbid": [""] }],
     "arrow-body-style": "off",
+    "react/require-default-props": "off",
+    "react/no-array-index-key": "off"
   }
 }

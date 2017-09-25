@@ -1,10 +1,15 @@
-import React from 'react';
+import React, { PropTypes } from 'react';
 import { Link } from 'react-router';
 
 const SiteLink = (props) => {
   return (
-    <a href={props.to} style={{ 'text-decoration': 'none', color: 'white' }}>{props.title}</a>
+    <Link to={props.to} style={{ 'text-decoration': 'none', color: 'white' }}>{props.title}</Link>
   );
+};
+
+SiteLink.propTypes = {
+  to: PropTypes.string,
+  title: PropTypes.string.isRequired,
 };
 
 const Separator = () => {

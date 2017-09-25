@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { PropTypes } from 'react';
 import { Link } from 'react-router';
 
 import PlaceHolder from '../assets/placeholder.png';
@@ -12,14 +12,25 @@ const Category = (props) => {
   );
 };
 
+Category.propTypes = {
+  route: PropTypes.string,
+  title: PropTypes.string.isRequired,
+};
+
 const CategoriesPanel = (props) => {
   return (
-    <div style={{ display: 'flex', padding: '20px', alignItems: 'flex-start', alignContent: 'flex-start' }}>
+    <div style={{ display: 'flex', padding: '20px', justifyContent: 'flex-start', flexWrap: 'wrap' }}>
       {
-        props.categories.map(category => <Category title={category.title} route={category.route} />)
+        props.categories.map(
+          (category, i) => <Category title={category.title} route={category.route} key={i} />
+        )
       }
     </div>
   );
+};
+
+CategoriesPanel.propTypes = {
+  categories: PropTypes.array.isRequired,
 };
 
 export default CategoriesPanel;
