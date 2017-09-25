@@ -22,7 +22,7 @@ const CategoriesPanel = (props) => {
     <div style={{ display: 'flex', padding: '20px', justifyContent: 'flex-start', flexWrap: 'wrap' }}>
       {
         props.categories.map(
-          (category, i) => <Category title={category.title} route={category.route} key={i} />
+          (category, i) => <Category title={category.title} route={category.route} key={i} />,
         )
       }
     </div>
