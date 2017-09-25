@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router';
 
 const style = {
   'text-align': 'left',
@@ -12,6 +13,9 @@ const style = {
 const NavBar = (props) => {
   return (
     <div style={style}>
+      {props.showGoBack &&
+        <Link to="home" style={{ 'text-decoration': 'none', color: 'white' }}>Categories &gt; </Link>
+      }
       {props.navTitle}
     </div>
   );

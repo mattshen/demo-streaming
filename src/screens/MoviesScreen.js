@@ -31,7 +31,7 @@ export default class MoviesScreen extends Component {
     return (
       <div>
         <Header />
-        <NavBar navTitle="Popular Movies" />
+        <NavBar navTitle="Popular Movies" showGoBack />
         <ItemsPanel items={this.state.movies} />
         <Footer />
       </div>

@@ -1,8 +1,9 @@
 import React from 'react';
+import { Link } from 'react-router';
 
 const SiteLink = (props) => {
   return (
-    <a>{props.title}</a>
+    <a href={props.to} style={{ 'text-decoration': 'none', color: 'white' }}>{props.title}</a>
   );
 };
 
@@ -12,10 +13,10 @@ const Separator = () => {
   );
 };
 
-const SiteLinks = (props) => {
+const SiteLinks = () => {
   return (
     <div style={{ padding: '5px' }}>
-      <SiteLink title="Home" /> <Separator />
+      <SiteLink title="Home" to={'/home'} /><Separator />
       <SiteLink title="Terms and Conditions" /><Separator />
       <SiteLink title="Privacy Policy" /> <Separator />
       <SiteLink title="Collection Statement" /> <Separator />
